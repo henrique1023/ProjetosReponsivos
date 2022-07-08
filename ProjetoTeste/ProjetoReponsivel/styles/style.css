@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --cor1: #2574a9;
+    --cor2: #cae1f1;
+    --cor3: #b7d5eb;
+    --cor4: #133b55;
+}
+
+*{
+    /*faz com que o codigo inteiro não tenha margin e nem padding*/
+    margin: 0px;
+    padding: 0px;
+
+    /*esse box-sizing faz com que o html tenha uma medida mais precisa oque facilita na estilização*/
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+   
+}
+
+header  {
+    display: block;
+
+    /*Esse position pega o elemento e chumba na tela*/
+    position: fixed;
+    width: 100%;
+    height: 100px;
+
+    /*isso diz para o elemento ficar na frente de qualquer outro elemento*/ 
+    z-index: 1;
+
+    /*Faz a transição do itens serem mais devagar*/
+    transition: all 70ms;
+    
+}
+
+.max-header {
+    background-color: var(--cor1);
+    height: 100px;
+}
+
+.min-header {
+    background-color: var(--cor3);
+    height: 80px;
+}
+
+header .container{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+
+    /*Esse display grid informa que todo o grade pode receber valores de grid*/
+    display: grid;
+    
+    align-items: center;
+    /*esse atributo grid vai dividir a tela em grids e vai nomear eles e dar os tamanho de cada 
+    área para eles*/
+    grid-template-areas: 
+        "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+}
+
+
+.logo{
+    /*Esse grid-area vai dizer qual grid essa tag participa*/
+    grid-area: lgo;
+}
+
+.logo img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.nav-bar{
+    grid-area: nav;
+    transition: all 70ms;
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.nav-bar a {
+    height: 100%;
+    text-decoration: none;
+    padding: 30px;
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+.max-nav a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.min-nav a {
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 20px;
+}
+
+.min-nav a:hover{
+    background-color: var(--cor4);
+    border-radius: 7px;
+    color: var(--cor2);
+}
+
+.nav-bar a:hover{
+    background-color: var(--cor2);
+    border-radius: 7px;
+    color: var(--cor4);
+}
+
+.max-nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 7px;
+    color: var(--cor4);
+}
+
+.ghost {
+    /*Viewport height, pega o tamanho da tela onde está e dá 100% daquela tela*/
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+main {
+    font-size: 20px;
+}
+
+main section{
+    display: grid;
+    /*Alinhamento horizontal dos itens*/
+    justify-content: center;
+
+    /*Alinhamento vertical dos itens*/
+    align-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+
+    color: var(--cor1);
+    font-size: 1.5em;
+}
+
+
+main > section:nth-child(odd){
+    /*Viewport height, pega o tamanho da tela onde está e dá 100% daquela tela*/
+    height: 100vh;
+    background-color: var(--cor2);
+}
+
+
+
+main > section:nth-child(even){
+    height: 100vh;
+    background-color: var(--cor3);
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    padding: 10px;
+}
