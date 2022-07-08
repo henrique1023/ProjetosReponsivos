@@ -8,7 +8,7 @@ const $logo = document.querySelectorAll('.logo')[0];
 
 const $nav = document.querySelectorAll('.nav-bar')[0];   
 
-//pega a rolagem da tela e transforma e um valor recebido
+//pega a rolagem da tela e transforma e um valor recebidoa
 window.addEventListener('scroll', toggleHeader, false)
 
 function toggleHeader(){
