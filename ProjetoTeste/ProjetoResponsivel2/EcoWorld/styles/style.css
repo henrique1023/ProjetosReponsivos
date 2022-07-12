@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +13,19 @@
 :root{
     --cor1: #f8efba;
     --cor2: #6ab04c; 
+    --cor3: #f0f0d6;
 }
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    font-size: 20px;
 }
 
 .logo{
@@ -50,7 +59,7 @@ a {
 .nav-bar a {
     height: 100%;
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
     text-decoration: none;
 }
 
@@ -61,4 +70,45 @@ a {
     display: grid;
     align-content: center;
     justify-content: center;
+    text-decoration: none;
+    color: var(--cor1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.abs-pos{
+    position: absolute;
+    top: 160px;
+    right: 0;
+}
+
+.fix-pos{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.ghost{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor3);
+}
+
+main {
+     font-size: 20px;
+     font-family: 'Noto Sans', sans-serif;
+}
+main section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+main section:nth-child(odd){
+    height: 100vh;
+    background-color: var(--cor3);
+}
+
+main section:nth-child(even){
+    height: 100vh;
+    background-color: var(--cor1);
 }

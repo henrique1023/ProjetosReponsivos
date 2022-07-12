@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- BootStrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style/style2.css">
+    <title>Ryjo Plastic</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="#" class="navbar-brand primary-color">
+                <img src="imagens/foto-ryjo-removebg-preview.png" alt="Icone Imovi">
+                <span>Ryjo plastic</span>
+            </a>
+            <!-- esse button gera os menu burguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- esse bi bi-list que dá o icone de hamburguer -->
+                <i class="bi bi-list"></i>
+            </button>
+            <!-- essa div gera os items do menus -->
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- nav-link active vai destacar o link, indicando em qual pagina está -->
+                    <li class="nav-item"><a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link primary-color">Produtos industriais</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link primary-color">Brinquedos</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link primary-color">Representantes</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link primary-color">Clientes</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link primary-color">Contatos</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="slider-container">
+        <!-- essa div slider tem que ter dentro dela todas as outras configurações -->
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <!-- criação dos botões do slider -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/banner-01.png" class="d-block w-100" alt="Banner 1">
+                    <div class="carousel-caption">
+                        <h5>Confira as novidades</h5>
+                        <a href="#" class="btn btn-dark">Ver produtos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/banner-02.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Conheça nossos produtos</h5>
+                        <a href="#" class="btn btn-dark">Ver produtos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/banner-03.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Fabricação propria</h5>
+                        <a href="#" class="btn btn-dark">Ver produtos</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- MINI BANNERS -->
+        <!-- essa classe indica que vai ser um grid com um centro de 1 por 1 em cada lado -->
+        <div class="col 12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!-- Componente Card que gera os mini Banners -->
+                    <div class="card text-center">
+                        <!-- Gera os icones -->
+                        <i class="bi bi-cart-check primary-color"></i>
+                        <!-- Gera o texto no corpo -->
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Brinquedos de Qualidade</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Facilis nulla, quos corporis recusandae pariatur autem adipisci eum placeat
+                                voluptatum provident!</p>
+                            <!-- Botão no corpo -->
+                            <a href="#" class="btn btn-dark">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-boxes primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Projetos</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Facilis nulla, quos corporis recusandae pariatur autem adipisci eum placeat
+                                voluptatum provident!</p>
+                            <a href="#" class="btn btn-dark">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-box2 primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Adiantamento de Entregas</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Facilis nulla, quos corporis recusandae pariatur autem adipisci eum placeat
+                                voluptatum provident!</p>
+                            <a href="#" class="btn btn-dark">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">
+                Produtos em destaque
+            </h2>
+            <p class="subtitle secondary-color">
+                Conheça nossos produtos!
+            </p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <!-- Esse g-4 é um gap entre as colunas -->
+            <div class="row g-4">
+                <!-- col-md-4 indica que em telas maiores cada imagem vai ocupar 4 espaço -->
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">9007 -Tanque Pulverizador Alcool</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 2" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 3" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 4" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 5" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- img-fluid indica para a imagem usar todo o espaço disponivel -->
+                    <img src="imagens/TanquePulverizador.007(2)" alt="Projeto 1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">9007 -Tanque Pulverizador Alcool</p>
+                        <h3>Nome projeto</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DESTAQUES -->
+
+    <!-- INFO -->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">
+                Tralhando com dedicação
+            </h2>
+            <p class="subtitle secondary-color">
+                Mais dados da nossa empresa
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <h2 class="title primary-color">Estes dados fazem a diferença</h2>
+                    <p class="subtitle secondary-color">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate qui nemo dolores labore
+                        quis, soluta vitae accusamus facilis cum molestiae reprehenderit? Voluptates nihil qui accusamus
+                        consequuntur animi repudiandae, placeat voluptate.
+                    </p>
+                    <div class="col-12" id="info-numbers">
+                        <div class="row">
+                            <div class="col-4">
+                                <h3 class="primary-color">18</h3>
+                                <p class="secondary-color">Anos de existencia</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="primary-color">9000</h3>
+                                <p class="secondary-color">Brinquedos vendidos</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="primary-color">150</h3>
+                                <p class="secondary-color">Modelos fabricados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="btn btn-dark">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="imagens/infobanner.jpg" alt="Informações da empresa" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INFO -->
+    <!-- FOOTER -->
+    <!-- Esse container-fluid faz o conteudo ficar na pagina inteira -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- FOOTER TOP -->
+                <div class="col-12" id="footer-top">
+                    <!-- justify-content-between ajuda a ajustar mais facilmente na tela -->
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <h2>Ryjo</h2>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER DETAILS -->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Entre em contato</h4>
+                            <p class="third-color">
+                                Mande um email para entrarmos em contato
+                            </p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                                </div>
+                                <button class="btn btn-dark">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="third-color"><small>(11)</small>2412-6656</p>
+                            <p class="third-color">atendimento@ryjoplastic.com.br</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar buscando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="third-color">Produtos industriais</a></li>
+                                        <li><a href="#" class="third-color">Brinquedos</a></li>
+                                        <li><a href="#" class="third-color">Representantes</a></li>
+                                        <li><a href="#" class="third-color">Clientes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <a href="#" class="third-color">Trabalhe conosco</a>
+                                        </li>
+                                        <li><a href="#" class="third-color">Contatos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER BOTTOM -->
+                <div class="col-12" id="footer-bottom">
+                    <!-- SEPARANDO OS OBJETOS -->
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="third-color">Ryjo Plastic &copy; 2021</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="third-color">
+                                Trabalhando sempre com qualidade
+                                <!-- Icone de coração -->
+                                <i class="bi bi-building"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>
